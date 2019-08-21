@@ -1,0 +1,20 @@
+  254  jobs
+  255  kill %2
+  256  jobs
+  257  kill %
+  258  jobs
+  259  ls /usr/bin | grep gcc | sort -r > ex.txt
+  260  ls
+  261  cat ex.txt
+  262  cat -l ex.txt
+  263  rm ex.txt
+  264  ch week1
+  265  cd week1
+  266  ls /usr/bin | grep gcc | sort -r > ex.txt
+  267  ls /usr/bin | grep gcc | sort -r > ex1.txt
+  268  rm ex
+  269  rm ex.txt
+  270  cat ex1.txt
+  271  history > ex2.txt
+  272  cat ex2.txt
+  273  history | tail -n 20 > ex2.txt
