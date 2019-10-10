@@ -1,0 +1,2 @@
+Virtual addresses are match to the physical adresses using page tables. 
+Physical address is real location in RAM, accessing some physical address means accessing this address in RAM chip. 
