@@ -1,0 +1,21 @@
+  641  cd ../
+  642  cd week1
+  643  touch file.txt
+  644  cd ../
+  645  cd week10
+  646  link
+  647  link file.txt _ex2.txt
+  648  link ./home/week1/file.txt _ex2.txt
+  649  link ~/home/week1/file.txt _ex2.txt
+  650  link ~/week1/file.txt _ex2.txt
+  651  ls -i _ex2.txt
+  652  find ~/week1/file.txt -inum 2652728
+  653  find ~ -inum 2652728
+  654  find .. -inum 2652728
+  655  find -inum 2652728
+  656  find .. -inum 2652728
+  657  find .. -inum 2652728 > ex2.txt
+  658  find .. -inum 2652728 exec rm{}\; >> ex2.txt 
+  667  find .. -inum 2652728 -exec rm {} \; >> ex2.txt
+  668  find .. -inum 2652728 >> ex2.txt
+  669  history > ex2_history.txt

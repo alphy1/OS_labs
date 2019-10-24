@@ -1,0 +1,3 @@
+1 i-nodes with a hard link count of two or more
+i-node number: 0
+3 files: file1, link1, file2, 
