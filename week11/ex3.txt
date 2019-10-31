@@ -1,0 +1,5 @@
+Linear buffer in stdlib becomes free after "/n" character.
+
+In first program there is no "\n"; therefore, buffer is not empty and we see string "hello" two times in the output. 
+
+In second program, instead, buffer is empty and we have one string "hello".
