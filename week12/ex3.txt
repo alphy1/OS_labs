@@ -1,0 +1,38 @@
+gcc -o copy.o -DBUF_SIZE=1024 -DSYNC copy.c
+time ./copy.o ex2.c ex2.c.copy
+
+real	0m0,100s
+user	0m0,000s
+sys	0m0,001s
+
+gcc -o copy.o -DBUF_SIZE=2048 -DSYNC copy.c
+time ./copy.o ex2.c ex2.c.copy
+
+real	0m0,044s
+user	0m0,002s
+sys	0m0,000s
+
+gcc -o copy.o -DBUF_SIZE=512 -DSYNC copy.c
+time ./copy.o ex2.c ex2.c.copy
+
+real	0m0,064s
+user	0m0,003s
+sys	0m0,000s
+
+gcc -o copy.o -DBUF_SIZE=64 -DSYNC copy.c
+time ./copy.o ex2.c ex2.c.copy
+
+real	0m0,266s
+user	0m0,004s
+sys	0m0,000s
+
+gcc -o copy.o -DBUF_SIZE=2 -DSYNC copy.c
+time ./copy.o ex2.c ex2.c.copy
+
+real	0m8,991s
+user	0m0,000s
+sys	0m0,046s
+
+Conclusion: time is increasing as the buffer size is decreasing
+
+
