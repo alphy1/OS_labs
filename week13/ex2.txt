@@ -1,0 +1,8 @@
+1. Avoidance - the most safity strategy, but for this method we need to know certain information in advance, like which resourses we will use, and is it available now or not. But for this we need extra device that will always know how we use our resourses.
+
+2. Prevention - it need's information from future steps: which resourses we can use and which can not. It's not always can be possible because usually operation systems can not provide prevention of deadlocks. But for some often processes we can store information about using of resourses and can prevent how this process will use resourses.
+
+3. Recovery - 
+Though preemption: it can be used when it's possible to temporarily take a resource away from its current owner and give it to another process. Recovering this way is frequently difficult or impossible due to the difficulty to determine which processes have resources that can easily be taken back.
+Through rollback: a process that owns a necessary resource is rolled back to a point in time before it acquired that resource by starting at one of its earlier checkpoints.It can be used when deadlocks are very likely but this strategy takes much memory space and time.
+Through Killing Processes: the simplest way to break a deadlock. Where possible, it is best to kill a process that can be rerun from the beginning with no ill effects. It is difficult to determine such a process though.
